@@ -4,6 +4,17 @@
 .card {
 	min-height:100vh;
 }
+.navAnchor {
+
+}
 
 //Foundation Overrides
 .top-bar {margin-bottom:0;}
+
+.top-bar a {
+	transition: all 0.12s ease-out 0s;
+    transition-property: all;
+    transition-duration: 0.12s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}

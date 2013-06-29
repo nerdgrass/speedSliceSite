@@ -6691,9 +6691,18 @@ a.th {
   min-height: 100vh;
 }
 
-/* line 9, ../sass/_global.scss */
+/* line 12, ../sass/_global.scss */
 .top-bar {
   margin-bottom: 0;
+}
+
+/* line 14, ../sass/_global.scss */
+.top-bar a {
+  transition: all 0.12s ease-out 0s;
+  transition-property: all;
+  transition-duration: 0.12s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
 }
 
 /* line 2, ../sass/_home.scss */
