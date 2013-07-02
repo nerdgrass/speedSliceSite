@@ -6686,17 +6686,47 @@ a.th {
   max-width: 800px;
 }
 
+/* line 2, ../sass/_global.scss */
+.red {
+  background: red;
+}
+
+/* line 3, ../sass/_global.scss */
+.green {
+  background: green;
+}
+
 /* line 4, ../sass/_global.scss */
+.gray {
+  background: gray;
+}
+
+/* line 5, ../sass/_global.scss */
+.darkGray {
+  background: darkgray;
+}
+
+/* line 6, ../sass/_global.scss */
+.lightGray {
+  background: lightgray;
+}
+
+/* line 7, ../sass/_global.scss */
+.block {
+  display: block;
+}
+
+/* line 10, ../sass/_global.scss */
 .card {
   min-height: 100vh;
 }
 
-/* line 12, ../sass/_global.scss */
+/* line 18, ../sass/_global.scss */
 .top-bar {
   margin-bottom: 0;
 }
 
-/* line 14, ../sass/_global.scss */
+/* line 20, ../sass/_global.scss */
 .top-bar a {
   transition: all 0.12s ease-out 0s;
   transition-property: all;
@@ -6721,4 +6751,10 @@ a.th {
 .iphone {
   max-height: 15vh;
   overflow: visible;
+}
+
+/* line 17, ../sass/_home.scss */
+.step1, .step2, .step3, .getSpeedSlice {
+  min-height: 20vh;
+  max-width: 100vw;
 }
