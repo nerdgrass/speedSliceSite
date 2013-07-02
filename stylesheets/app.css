@@ -6760,6 +6760,27 @@ a.th {
 }
 
 /* line 21, ../sass/_home.scss */
+.button#mHeroButton {
+  min-height: 6.25em;
+  border: none;
+}
+
+/* line 25, ../sass/_home.scss */
+.button#mSubHeroButton {
+  min-height: 3.125em;
+  border: none;
+}
+
+/* line 29, ../sass/_home.scss */
 .playStore {
-  background: red !important;
+  background: black url(../img/playStoreButton.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+/* line 38, ../sass/_home.scss */
+.appStore {
+  background: black url(../img/appStoreButton.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
