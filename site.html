@@ -83,7 +83,7 @@
 					<p>Step 1</p>
 				</div>
 				<div class="small-8 columns block lightGray">
-					<p> Step 1 description</p>
+					<p>Step 1 description</p>
 				</div>
 			</div>
 			<div class="row step2">
@@ -91,7 +91,7 @@
 					<p>Step 2</p>
 				</div>
 				<div class="small-4 columns block gray">
-					<p> Step 2 description</p>
+					<p>Step 2 description</p>
 				</div>
 			</div>
 			<div class="row step3">
@@ -99,16 +99,16 @@
 					<p>Step 3</p>
 				</div>
 				<div class="small-8 columns block lightGray">
-					<p> Step 3 description/p>
+					<p>Step 3 description</p>
 				</div>
 			</div>
 			<div class="row getSpeedSlice">
 				<div class="small-10 small-centered columns">
-					<button class="large button expand">App Store</button>
+					<button id="mHeroButton" class="large button expand"></button>
 					<div class="row">
-						<div class="small-4 small-centered columns">
+						<div id class="small-4 small-centered columns">
 							<p>Or</p>
-							<button class="small button expand">Other App Store</button>
+							<button id="mSubHeroButton" class="medium button expand"></button>
 						</div>
 					</div>
 				</div>
@@ -342,6 +342,45 @@
   
   <script>
     $(document).foundation();
+  </script>
+
+  <script type="text/javascript">
+	  var M;
+	  navigator.sayswho = (function () {
+	      var N = navigator.appName,
+	          ua = navigator.userAgent,
+	          tem;
+	      window.M = ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+	      if (M && (tem = ua.match(/version\/([\.\d]+)/i)) != null) M[2] = tem[1];
+	      M = M ? [M[1], M[2]] : [N, navigator.appVersion, '-?'];
+	      return M;
+	  })();
+
+	  if (M[0] == "Chrome") {
+	  	// Make sure mHeroButton doesn't have appStore class
+	  	document.getElementById("mHeroButton").className =
+	  	    document.getElementById("mHeroButton").className.replace(/(?:^|\s)appStore(?!\S)/g, '')
+	  	// Add playStore class to mHeroButton
+	  	document.getElementById("mHeroButton").className += " playStore";
+
+	  	// Make sure mSubHeroButton doesn't have playStore class
+	  	document.getElementById("mSubHeroButton").className =
+	  	    document.getElementById("mSubHeroButton").className.replace(/(?:^|\s)playStore(?!\S)/g, '')
+	  	// Add appStore class to mSubHeroButton
+	  	document.getElementById("mSubHeroButton").className += " appStore";
+	  } else if (M[0] == "Safari") {
+	      // Make sure mHeroButton doesn't have playStore class
+	      document.getElementById("mHeroButton").className =
+	          document.getElementById("mHeroButton").className.replace(/(?:^|\s)playStore(?!\S)/g, '')
+	      // Add appStore class to mHeroButton
+	      document.getElementById("mHeroButton").className += " appStore";
+
+	      // Make sure mSubHeroButton doesn't have appStore class
+	      document.getElementById("mSubHeroButton").className =
+	          document.getElementById("mSubHeroButton").className.replace(/(?:^|\s)appStore(?!\S)/g, '')
+	      // Add playStore class to mSubHeroButton
+	      document.getElementById("mSubHeroButton").className += " playStore";
+	  }
   </script>
 </body>
 </html>
