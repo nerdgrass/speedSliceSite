@@ -6920,19 +6920,72 @@ p {
   min-height: 2.8125em;
 }
 
-/* line 143, ../sass/_global.scss */
+/* line 141, ../sass/_global.scss */
+.tumblrBtn {
+  background: #a33f2d url(../img/tumblr.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 2.8125em;
+  min-width: 9.375em;
+}
+
+/* line 150, ../sass/_global.scss */
+.fbBtn {
+  background: #a33f2d url(../img/fb.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 2.8125em;
+  min-width: 9.375em;
+}
+
+/* line 159, ../sass/_global.scss */
+.twitterBtn {
+  background: #a33f2d url(../img/twitter.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 2.8125em;
+  min-width: 9.375em;
+}
+
+/* line 170, ../sass/_global.scss */
 .footer {
   min-width: 100vw;
   background: #a33f2d;
   color: #f7e6da;
+  padding: 1.875em 0;
 }
 
-/* line 150, ../sass/_global.scss */
+/* line 176, ../sass/_global.scss */
+.footer ul {
+  list-style: none;
+}
+
+/* line 179, ../sass/_global.scss */
+.footer ul a {
+  color: #f7e6da;
+}
+
+/* line 180, ../sass/_global.scss */
+.footer ul a:hover {
+  color: #ea9c32;
+}
+
+/* line 181, ../sass/_global.scss */
+.footer ul a:visited {
+  color: #f7e6da;
+}
+
+/* line 182, ../sass/_global.scss */
+a.disabled {
+  color: #2b0905;
+}
+
+/* line 186, ../sass/_global.scss */
 .top-bar {
   margin-bottom: 0;
 }
 
-/* line 153, ../sass/_global.scss */
+/* line 189, ../sass/_global.scss */
 .top-bar a {
   transition: all 0.12s ease-out 0s;
   transition-property: all;
@@ -6941,7 +6994,7 @@ p {
   transition-delay: 0s;
 }
 
-/* line 160, ../sass/_global.scss */
+/* line 196, ../sass/_global.scss */
 .contain-to-grid.nav {
   border-bottom: 4px solid #f7e6da;
 }

@@ -137,14 +137,50 @@ p {color:$darkRed;}
 	background-size:contain;
 	min-height:emCalc(45px);
 }
-
+// Social Media Buttons!
+.tumblrBtn {
+	background: $red
+		url(../img/tumblr.png)
+		no-repeat;
+	background-position: center center;
+	background-size:contain;
+	min-height:emCalc(45px);
+	min-width:emCalc(150px);
+}
+.fbBtn {
+	background: $red
+		url(../img/fb.png)
+		no-repeat;
+	background-position: center center;
+	background-size:contain;
+	min-height:emCalc(45px);
+	min-width:emCalc(150px);
+}
+.twitterBtn {
+	background: $red
+		url(../img/twitter.png)
+		no-repeat;
+	background-position: center center;
+	background-size:contain;
+	min-height:emCalc(45px);
+	min-width:emCalc(150px);
+}
 
 //Footer
 .footer {
 	min-width:100vw;
 	background:$red;
 	color:$beige;
+	padding:emCalc(30px) 0;
 }
+.footer ul {
+	list-style:none;
+}
+.footer ul a {color:$beige;}
+.footer ul a:hover {color:$gold;}
+.footer ul a:visited {color:$beige;}
+a.disabled {color:$darkRed;}
+
 
 //Foundation Overrides
 .top-bar {
