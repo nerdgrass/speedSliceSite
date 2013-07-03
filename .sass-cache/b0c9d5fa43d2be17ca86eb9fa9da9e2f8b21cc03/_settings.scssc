@@ -1,7 +1,7 @@
 3.2.9 (Media Mark)
-a1cbfa13375119da9cbc3752f6b31a1e091002f6
+58536dd1ccbc7cb3a160503dac60096a3734c03f
 o:Sass::Tree::RootNode
-:@template"}//
+:@template".}//
 // Foundation Variables
 //
 
@@ -203,7 +203,7 @@ $default-float: left;
 
 // Lists
 
-// $list-style-position: outside;
+ $list-style-position: inside;
 // $list-side-margin: emCalc(20px);
 // $list-nested-margin: emCalc(20px);
 // $definition-list-header-weight: bold;
@@ -329,12 +329,12 @@ $default-float: left;
 // $button-med: emCalc(12px);
 // $button-lrg: emCalc(16px);
 
-// Display property.
+// // Display property.
 
-// $button-display: inline-block;
-// $button-margin-bottom: emCalc(20px);
+// // $button-display: inline-block;
+// // $button-margin-bottom: emCalc(20px);
 
-// Button text styles.
+// // Button text styles.
 
 // $button-font-family: inherit;
 // $button-font-color: #fff;
@@ -346,11 +346,11 @@ $default-float: left;
 // $button-font-weight: bold;
 // $button-font-align: center;
 
-// Various hover effects.
+// // Various hover effects.
 
-// $button-function-factor: 10%;
+// // $button-function-factor: 10%;
 
-// Button border styles.
+// // Button border styles.
 
 // $button-border-width: 1px;
 // $button-border-style: solid;
@@ -1272,7 +1272,7 @@ $default-float: left;
 // Sticky Class
 
 // $topbar-sticky-class: ".sticky";
-:@has_childrenT:@options{ :@children[to:Sass::Tree::CommentNode
+:@has_childrenT:@options{ :@children[uo:Sass::Tree::CommentNode
 :
 @type:silent:@value["%/*
  * Foundation Variables
@@ -1475,14 +1475,13 @@ times;@;o;;[ ;["em;i;@;"1em;i;i;@;	[ ;i:@splat0;i:
  * $hr-border-color: #ddd;
  * $hr-margin: emCalc(20px); */;@;	[ ;iÄo;
 
-;;;["/* Lists */;@;	[ ;iÉo;
+;;;["/* Lists */;@;	[ ;iÉo;;0;"list-style-position;o;#	;;$;"inside;@;iË;@;	[ ;iËo;
 
-;;;["ø/* $list-style-position: outside;
- * $list-side-margin: emCalc(20px);
+;;;["Ö/* $list-side-margin: emCalc(20px);
  * $list-nested-margin: emCalc(20px);
  * $definition-list-header-weight: bold;
  * $definition-list-header-margin-bottom: .3em;
- * $definition-list-margin-bottom: emCalc(12px); */;@;	[ ;iËo;
+ * $definition-list-margin-bottom: emCalc(12px); */;@;	[ ;iÌo;
 
 ;;;["/* Blockquotes */;@;	[ ;iÒo;
 
@@ -1603,12 +1602,12 @@ times;@;o;;[ ;["em;i;@;"1em;i;i;@;	[ ;i:@splat0;i:
  * $button-med: emCalc(12px);
  * $button-lrg: emCalc(16px); */;@;	[ ;iDo;
 
-;;;["/* Display property. */;@;	[ ;iIo;
+;;;["/* // Display property. */;@;	[ ;iIo;
 
-;;;["Q/* $button-display: inline-block;
- * $button-margin-bottom: emCalc(20px); */;@;	[ ;iKo;
+;;;["W/* // $button-display: inline-block;
+ * // $button-margin-bottom: emCalc(20px); */;@;	[ ;iKo;
 
-;;;["/* Button text styles. */;@;	[ ;iNo;
+;;;["!/* // Button text styles. */;@;	[ ;iNo;
 
 ;;;["*/* $button-font-family: inherit;
  * $button-font-color: #fff;
@@ -1620,11 +1619,11 @@ times;@;o;;[ ;["em;i;@;"1em;i;i;@;	[ ;i:@splat0;i:
  * $button-font-weight: bold;
  * $button-font-align: center; */;@;	[ ;iPo;
 
-;;;["!/* Various hover effects. */;@;	[ ;iZo;
+;;;["$/* // Various hover effects. */;@;	[ ;iZo;
 
-;;;["(/* $button-function-factor: 10%; */;@;	[ ;i\o;
+;;;["+/* // $button-function-factor: 10%; */;@;	[ ;i\o;
 
-;;;[" /* Button border styles. */;@;	[ ;i^o;
+;;;["#/* // Button border styles. */;@;	[ ;i^o;
 
 ;;;["Š/* $button-border-width: 1px;
  * $button-border-style: solid;

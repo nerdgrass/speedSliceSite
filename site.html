@@ -10,18 +10,26 @@
 
   
   <link rel="stylesheet" href="stylesheets/app.css" />
+
+  <!-- Super Slow Webfonts Crap -->
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,400italic,700,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   
 
   <script src="javascripts/vendor/custom.modernizr.js"></script>
 
 </head>
 <body>
-	<div class="contain-to-grid fixed">
+	<div class="contain-to-grid fixed nav">
 		<nav class="top-bar">
 		  <ul class="title-area">
 		    <!-- Title Area -->
 		    <li class="name">
-		      <h1><a href="#home">SpeedSlice </a></h1>
+		      <h1 class="logo">
+		      	<a href="#home">
+		      		<img class="logo" src="img/speedSliceLogo.png">
+		      		SpeedSlice 
+		      	</a>
+		      </h1>
 		    </li>
 		    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -29,36 +37,33 @@
 		  <section class="top-bar-section">
 		    <!-- Left Nav Section -->
 		    <ul class="left">
-		      <li class="divider"></li>
 		      <li class="active"><a href="#about">About</a></li>
-		      <li class="divider"></li>
 		      <li><a href="#restaurants">Restaurants</a></li>
-		      <li class="divider"></li>
 		      <li class=""><a href="#contact">Contact</a></li>
-		      <li class="divider"></li>
 		    </ul>
 
 		    <!-- Right Nav Section -->
 		    <ul class="right">
 		      <li class="divider show-for-small"></li>
 		      <li class="has-form">
-		        <a class="button" href="#">App Store Button</a>
+		        <button id="navButton" class="beigeButton" href="#"></button>
 		      </li>
 		    </ul>
 		  </section>
 		</nav>
 	</div><!-- End Nav -->
 
+
 	<!-- Home Card -->
 	<a name="home"></a>
 	<div class="hero hide-for-small">
 		<div class="row">
-			<div class="large-6 columns">
-				<h1>The Title Goes Hurr!</h1>
-				<h1 class="subheader">subtext hurrrrrrr</h1>
+			<div class="large-6 columns heroText">
+				<h1>The fastest way to order pizza!</h1>
+				<h1 class="subheader ribbon"><span class="ribbonContent">Now serving the greater Boston area!</span></h1>
 			</div>
 			<div class="large-6 columns iphone">
-				<img style="width:75%;height:75%;" src="img/iphone.png">
+				<img src="img/iphoneSSapp.png">
 			</div>
 		</div>
 	</div>
@@ -67,10 +72,23 @@
 		<div class="row homeCard">
 			<div class="large-6 columns">
 				<p>
-					3D-printed papier-mache drone tank-traps military-grade pre- render-farm long-chain hydrocarbons footage tank-traps rifle. neon kanji sprawl cyber- fetishism Legba meta- beef noodles sensory cartel post-. human sentient wristwatch sprawl artisanal Shibuya spook bomb tattoo drugs computer. 
+					Build your pizza and tap to order! No picking through menus, no phone calls - only your favorite local pizza shops. It’s that simple! Try it free on iOS or Android by clicking below:
 				</p>
-				<button>App Store</button>
-				<button>Play Store</button>
+				<button class="redButton large appStore"></button>
+				<button class="redButton large playStore"></button>
+				<form>
+					<h3>Send SpeedSlice to a phone</h3>
+					<p>Interested in SpeedSlice? Send it to you, or a friend's, phone in a convenient SMS message! Just enter the phone number you want to send SpeedSlice to and hit send!
+					<form>
+				      <div class="row">
+				        <div class="small-12 large-10 columns">
+				          <input type="text" placeholder="Phone Number, IE: (617) 867-5309">
+				        </div>
+				        <div class="small-12 large-2 columns">
+				        	<button class="redButton small">Send</button>
+				        </div>
+				      </div>
+					</form>
 			</div>
 		</div>
 	</div>
@@ -116,54 +134,90 @@
 		</div>
 	</div>
 
-
 	<a name="about"></a> 
-	<div class="row"><!-- About Card -->
-		<div class="large-12 columns card">
-			<h1>About Us</h1>
-			<div class="row">
-				<div class="large-6 columns">
-					<h2>About Us Header</h2>
-					<p>
-						3D-printed papier-mache drone tank-traps military-grade pre- render-farm long-chain hydrocarbons footage tank-traps rifle. neon kanji sprawl cyber- fetishism Legba meta- beef noodles sensory cartel post-. human sentient wristwatch sprawl artisanal Shibuya spook bomb tattoo drugs computer. 
-					</p>
-					<p>
-						3D-printed papier-mache drone tank-traps military-grade pre- render-farm long-chain hydrocarbons footage tank-traps rifle. neon kanji sprawl cyber- fetishism Legba meta- beef noodles sensory cartel post-. human sentient wristwatch sprawl artisanal Shibuya spook bomb tattoo drugs computer. 
-					</p>
-					<ul>
-						<li>Its Fast!</li>
-						<li>Its Easy!</li>
-						<li>Its Pizza!</li>
-					</ul>
-				</div>
-				<div class="large-6 columns">
-					<p>
-						3D-printed papier-mache drone tank-traps military-grade pre- render-farm long-chain hydrocarbons footage tank-traps rifle. neon kanji sprawl cyber- fetishism Legba meta- beef noodles sensory cartel post-. human sentient wristwatch sprawl artisanal Shibuya spook bomb tattoo drugs computer. 
-					</p>
-					<button>headtome</button>
-					<button>twitters</button>
-					<button>tumblogger</button>
-					<p>
-						3D-printed papier-mache drone tank-traps military-grade pre- render-farm long-chain hydrocarbons footage tank-traps rifle. neon kanji sprawl cyber- fetishism Legba meta- beef noodles sensory cartel post-. human sentient wristwatch sprawl artisanal Shibuya spook bomb tattoo drugs computer. 
-					</p>
+	
+	<div class="white">
+		<hr>
+		<div class="row"><!-- About Card -->
+			<div class="large-12 columns card">
+				<h1>About Us</h1>
+				<div class="row">
+					<div class="large-6 columns">
+						<h2>How this Works</h2>
+						<p>
+							SpeedSlice is the ultimate app for finding local pizza joints that are
+						    open and delivering to you. whether you’re having an office pizza party,
+						    having a night in, or stumbling home from the bar at 2am, we’re going to
+						    give you insanely convenient web and mobile apps to find pizza joints
+						    that’ll deliver what you want right away.
+						</p>
+					    <p>
+					    	We’re currently in beta mode. this means our restaurant coverage is
+						    limited, but we’re constantly working on expanding. right now, we’ve got
+						    the best coverage in our hometown of boston, (and cambridge, too!)
+						</p>
+					    <p>because we’re so new (and scrappy), we had to make choices about what
+					    features to add, so here goes:</p>
+
+					    <ul>
+					        <li>All pizzas you order will be large pizzas, large defined by the shop you order from.</li>
+
+					        <li>We cover only the most popular and common toppings.</li>
+
+					        <li>All peppers are green peppers</li>
+
+					        <li>prices shown on the “tap to order” screen include cost of pizza,
+					        delivery fee (if applicable), tax, and tip, unless you decide to tip
+					        cash!</li>
+
+					        <li>We’re going to be adding more features and toppings as we go!</li>
+					    </ul>
+					</div>
+					<div class="large-6 columns">
+						<div class="row">
+							<h2>Who's Behind it </h2>
+							<div class="small-6 columns">
+								<img class="aboutPortrait" src="img/greg.jpg" alt="Greg Santos, CEO of SpeedSlice">
+								<h3 class="aboutPortraitText">Greg Santos</h3>
+								<h3 class="subheader aboutPortraitText">CEO &amp; Co-founder</h3>
+							</div>
+							<div class="small-6 columns">
+								<img class="aboutPortrait" src="img/greg.jpg" alt="Greg Santos, CEO of SpeedSlice">
+								<h3 class="aboutPortraitText">Greg Santos</h3>
+								<h3 class="subheader aboutPortraitText">CEO &amp; Co-founder</h3>
+							</div>
+						</div>
+						<p>
+							Once upon a time, we really wanted a pizza. We didn’t want to make one, we didn’t want to look for a restaurant that was open, or that delivered to us, and we really didn’t feel like calling a place just to be put on hold forever. We just wanted it to magically be there in front of us.
+						</p>
+						<p>
+							We created this app to share our love for pizza and to give pizza lovers everywhere quick and easy access to any pizza joint they want – not just the big guys!
+						</p>
+						<button class="redButton fb">facebook</button>
+						<button class="redButton tumblr">tumblr</button>
+						<button class="redButton twitter">twitter</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-
-	<a class="navAnchor" name="restaurants"></a> 
+	<hr>
+	<a class="navAnchor" name="restaurants"></a>
 	<div class="row"><!-- Restaurants Card -->
 		<div class="large-12 columns card">
 			<h1>Restaurants</h1>
 			<div class="row">
 				<div class="large-6 columns">
 					<p>
-						3D-printed papier-mache drone tank-traps military-grade pre- render-farm long-chain hydrocarbons footage tank-traps rifle. neon kanji sprawl cyber- fetishism Legba meta- beef noodles sensory cartel post-. human sentient wristwatch sprawl artisanal Shibuya spook bomb tattoo drugs computer. 
+						As a local business ourselves, we understand that sometimes larger companies can simply swee
+					</p>
+					<p>
+						We at SpeedSlice thought there was a better way: Let us build the mobile delivery experience, and let the people who make the best local pizzas do just that.  
 					</p>
 					<h2>Get Listed</h2>
 					<p>
-						3D-printed papier-mache drone tank-traps military-grade pre- render-farm long-chain hydrocarbons footage tank-traps rifle. neon kanji sprawl cyber- fetishism Legba meta- beef noodles sensory cartel post-. human sentient wristwatch sprawl artisanal Shibuya spook bomb tattoo drugs computer. 
+						Want to list your awesome, local pizza place on SpeedSlice? Just fill out the form below and we'll reach out and see if we can't do some business!
 					</p>
 					<form>
 						<div class="row">
@@ -183,7 +237,7 @@
 						        </div>
 
 						        <div class="small-12 columns">
-						          <a href="#" class="button expand">Get Listed</a>
+						          <button class="redButton expand">Get Listed</button>
 						        </div>
 						      </div>
 						    </div>
@@ -191,16 +245,15 @@
 					</form>
 				</div>
 				<div class="large-6 columns">
-					<img src="http://dummyimage.com/600x400/000/fff">
+					<img class="coverageMap" src="img/tempMap.jpg">
 					<div class="row">
+						<div class="small-12 columns">
+							<p>
+								We cover 90% of Boston, Cambridge, &amp; Somerville. Want to know if you can order from your favorite restaurant? Check to see if we work with them!
+							</p>
+						</div>
 						<div class="small-6 columns">
 							<ul>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
 								<li>Restaurant</li>
 								<li>Restaurant</li>
 								<li>Restaurant</li>
@@ -209,12 +262,6 @@
 						</div>
 						<div class="small-6 columns">
 							<ul>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
 								<li>Restaurant</li>
 								<li>Restaurant</li>
 								<li>Restaurant</li>
@@ -229,79 +276,89 @@
 	
 
 	<a name="contact"></a> 
-	<div class="row"><!-- Contact Card -->
-		<div class="large-12 columns card">
-			<h1>Contact Us</h1>
-			<div class="row">
-				<div class="large-6 columns">
-					<p>
-						3D-printed papier-mache drone tank-traps military-grade pre- render-farm long-chain hydrocarbons footage tank-traps rifle. neon kanji sprawl cyber- fetishism Legba meta- beef noodles sensory cartel post-. human sentient wristwatch sprawl artisanal Shibuya spook bomb tattoo drugs computer. 
-					</p>
-					<h2>Get Listed</h2>
-					<p>
-						3D-printed papier-mache drone tank-traps military-grade pre- render-farm long-chain hydrocarbons footage tank-traps rifle. neon kanji sprawl cyber- fetishism Legba meta- beef noodles sensory cartel post-. human sentient wristwatch sprawl artisanal Shibuya spook bomb tattoo drugs computer. 
-					</p>
-					<form>
-						<div class="row">
-						    <div class="large-10 columns">
-						      <div class="row">
-						        <div class="small-12 columns">
-						          <input type="text" placeholder="Name">
-						        </div>
-						        <div class="small-12 columns">
-						          <input type="text" placeholder="Restaurant Name">
-						        </div>
-						        <div class="small-6 columns">
-						          <input type="text" placeholder="Email">
-						        </div>
-						        <div class="small-6 columns">
-						          <input type="text" placeholder="Phone">
-						        </div>
+	<div class="white">
+		<hr>
+		<div class="row"><!-- Contact Card -->
+			<div class="large-12 columns">
+				<h1>Contact Us</h1>
+				<div class="row">
+					<div class="large-6 columns">
+						<p>
+							Would you like your restaurant to be listed in
+						</p>
+						<button>headtome</button>
+						<button>twitters</button>
+						<button>tumblogger</button>
+					</div>
+					<div class="small-12 large-6 columns">
+						<form>
+							<div class="row">
+							    <div class="large-10 columns">
+							      <div class="row">
+							        <div class="small-12 columns">
+							          <input type="text" placeholder="Name">
+							        </div>
+							        <div class="small-12 columns">
+							          <input type="text" placeholder="Restaurant Name">
+							        </div>
+							        <div class="small-6 columns">
+							          <input type="text" placeholder="Email">
+							        </div>
+							        <div class="small-6 columns">
+							          <input type="text" placeholder="Phone">
+							        </div>
 
-						        <div class="small-12 columns">
-						          <a href="#" class="button expand">Get Listed</a>
-						        </div>
-						      </div>
-						    </div>
-						</div>
-					</form>
-				</div>
-				<div class="large-6 columns">
-					<img src="http://dummyimage.com/600x400/000/fff">
-					<div class="row">
-						<div class="large-6 columns">
-							<ul>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-							</ul>
-						</div>
-						<div class="large-6 columns">
-							<ul>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-							</ul>
-						</div>
+							        <div class="small-12 columns">
+							          <button class="redButton expand">Get Listed</button>
+							        </div>
+							      </div>
+							    </div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="footer">
+		<div class="row">
+			<div class="small-6 large-3 columns">
+				<ul>
+					<li>About</li>
+					<li>Team (Coming Soon!)</li>
+					<li>Careers (Coming Soon!)</li>
+				</ul>
+			</div>
+			<div class="small-6 large-3 columns">
+				<ul>
+					<li>Restaurants</li>
+					<li>Get Listed</li>
+					<li>Find a restaurant</li>
+				</ul>
+			</div>
+			<div class="small-6 large-3 columns">
+				<ul>
+					<li>Blog</li>
+					<li>Twitter</li>
+					<li>Facebook</li>
+				</ul>
+			</div>
+			<div class="small-6 large-3 columns">
+				<ul>
+					<li>App Store Download</li>
+					<li>Play Store Download</li>
+					<li>Web Application</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 columns">
+				SpeedSlice | Order Pizza &copy; 2013. All Rights Reserved.
+			</div>
+		</div>
+	</div>
+
 
   <script>
   document.write('<script src=' +
@@ -356,30 +413,18 @@
 	      return M;
 	  })();
 
-	  if (M[0] == "Chrome") {
-	  	// Make sure mHeroButton doesn't have appStore class
-	  	document.getElementById("mHeroButton").className =
-	  	    document.getElementById("mHeroButton").className.replace(/(?:^|\s)appStore(?!\S)/g, '')
+	  if (M[0] == "Safari") {
+	  	// Add appStore class to mHeroButton
+	  	document.getElementById("mHeroButton").className += " appStore";
+	  	// Add playStore class to mSubHeroButton
+	  	document.getElementById("mSubHeroButton").className += " playStore";
+	  } else {
+	  	// Add playStore class to navButton
+	  	document.getElementById("navButton").className += " playStoreLight";
 	  	// Add playStore class to mHeroButton
 	  	document.getElementById("mHeroButton").className += " playStore";
-
-	  	// Make sure mSubHeroButton doesn't have playStore class
-	  	document.getElementById("mSubHeroButton").className =
-	  	    document.getElementById("mSubHeroButton").className.replace(/(?:^|\s)playStore(?!\S)/g, '')
 	  	// Add appStore class to mSubHeroButton
 	  	document.getElementById("mSubHeroButton").className += " appStore";
-	  } else if (M[0] == "Safari") {
-	      // Make sure mHeroButton doesn't have playStore class
-	      document.getElementById("mHeroButton").className =
-	          document.getElementById("mHeroButton").className.replace(/(?:^|\s)playStore(?!\S)/g, '')
-	      // Add appStore class to mHeroButton
-	      document.getElementById("mHeroButton").className += " appStore";
-
-	      // Make sure mSubHeroButton doesn't have appStore class
-	      document.getElementById("mSubHeroButton").className =
-	          document.getElementById("mSubHeroButton").className.replace(/(?:^|\s)appStore(?!\S)/g, '')
-	      // Add playStore class to mSubHeroButton
-	      document.getElementById("mSubHeroButton").className += " playStore";
 	  }
   </script>
 </body>

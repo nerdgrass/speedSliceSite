@@ -1,22 +1,155 @@
 // Variables
+$white:#F9F5F2;
+$beige:#F7E6DA;
+$red:#A33F2D;
+$darkRed:#2B0905;
+$gold:#EA9C32;
 .red {background:red;}
 .green {background:green;}
 .gray {background:gray;}
 .darkGray {background:darkgray;}
 .lightGray {background:lightgray;}
 .block {display:block;}
+.white {background:$white;}
 
-// Other Stuff?
-.card {
-	min-height:100vh;
+// Global
+body {background: #F7E6DA;}
+hr {
+	min-height:50px;
+	border:none;
+	opacity:.25;
+	margin:0;
+
+	// Checkboard pattern, thanks Lea Verou: http://bit.ly/uDFmee
+	background-image:
+	      -moz-linear-gradient(45deg, $red 25%, transparent 25%), 
+	      -moz-linear-gradient(-45deg, $red 25%, transparent 25%),
+	      -moz-linear-gradient(45deg, transparent 75%, $red 75%),
+	      -moz-linear-gradient(-45deg, transparent 75%, $red 75%);
+	    background-image:
+	      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, $red), color-stop(.25, transparent)), 
+	      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, $red), color-stop(.25, transparent)),
+	      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, $red)),
+	      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, $red));
+
+	    -moz-background-size:50px 50px;
+	    background-size:50px 50px;
+	    -webkit-background-size:50px 51px; /* override value for shitty webkit */
+	    
+	    background-position:0 0, 25px 0, 25px -25px, 0px 25px;
 }
-.navAnchor {
+img.logo {
+	max-width:emCalc(35px);
+	max-height:emCalc(35px);
+	padding-bottom:emCalc(1px);
+}
+.card {min-height:100vh;}
 
+//Typography
+// font-family: 'Lobster Two', cursive;
+// font-family: 'Open Sans', sans-serif;
+h1 {
+	font-size:emCalc(72px);
+	font-family: 'Lobster Two', cursive;
+	font-weight: 700;
+}
+h1.logo {
+	font-family: 'Lobster Two', cursive;
+}
+h1.subheader {
+	font-weight:300;
+	font-size:emCalc(32px);
+}
+p {color:$darkRed;}
+
+//Buttons
+
+.redButton {
+	@include button-base;
+	@include button-size;
+	@include button-style($bg:$red);
+	@include single-transition;
+}
+.redButton:active {
+	position: relative;
+	top: 1px;
+	left:1px;
+}
+.beigeButton {
+	@include button-base;
+	@include button-size;
+	@include button-style($bg:$beige);
+	@include single-transition;
+	color:$darkRed;
+}
+.beigeButton:active {
+	position: relative;
+	top: 1px;
+	left:1px;
+}
+#navButton {
+	border:none;
+	min-width:10em;
+	min-height:emCalc(45px);
+}
+.button#mHeroButton {
+	min-height:emCalc(100px);
+	border:none;
+}
+.button#mSubHeroButton {
+	min-height:emCalc(50px);
+	border:none;
+}
+// Application Store Buttons
+.playStore {
+	background: $red
+		url(../img/playStoreButton.png)
+		no-repeat;
+	background-position: center center;
+	background-size:contain;
+	min-height:emCalc(45px);
+}
+.redButton.playStore {min-width:10em;}
+.appStore {
+	background: $red
+		url(../img/appStoreButton.png)
+		no-repeat;
+	background-position: center center;
+	background-size:contain;
+	min-height:emCalc(45px);
+}
+.redButton.appStore {min-width:10em;}
+.appStoreLight {
+	background: 
+		$beige
+		url(../img/appStoreButtonLight.png)
+		no-repeat;
+	background-position: center center;
+	background-size:contain;
+	min-height:emCalc(45px);
+}
+.playStoreLight {
+	background: 
+		$beige
+		url(../img/playStoreButtonLight.png)
+		no-repeat;
+	background-position: center center;
+	background-size:contain;
+	min-height:emCalc(45px);
+}
+
+
+//Footer
+.footer {
+	min-width:100vw;
+	background:$red;
+	color:$beige;
 }
 
 //Foundation Overrides
-.top-bar {margin-bottom:0;}
-
+.top-bar {
+	margin-bottom:0;
+}
 .top-bar a {
 	transition: all 0.12s ease-out 0s;
     transition-property: all;
@@ -24,3 +157,9 @@
     transition-timing-function: ease-out;
     transition-delay: 0s;
 }
+.contain-to-grid.nav {
+	border-bottom:4px solid $beige;
+}
+
+
+

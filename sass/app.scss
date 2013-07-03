@@ -1,3 +1,6 @@
+// My Settings. Gosh, its annoying I have to break up my CSS like this!
+@import "mySettings";
+
 // Global Foundation Settings
 @import "settings";
 
@@ -49,3 +52,4 @@
 // SpeedSlice 
 @import "global"; // Global CSS for SpeedSliceSite
 @import "home"; //Home Slide
+@import "about"; //About Slide

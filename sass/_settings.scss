@@ -200,7 +200,7 @@ $default-float: left;
 
 // Lists
 
-// $list-style-position: outside;
+ $list-style-position: inside;
 // $list-side-margin: emCalc(20px);
 // $list-nested-margin: emCalc(20px);
 // $definition-list-header-weight: bold;
@@ -326,12 +326,12 @@ $default-float: left;
 // $button-med: emCalc(12px);
 // $button-lrg: emCalc(16px);
 
-// Display property.
+// // Display property.
 
-// $button-display: inline-block;
-// $button-margin-bottom: emCalc(20px);
+// // $button-display: inline-block;
+// // $button-margin-bottom: emCalc(20px);
 
-// Button text styles.
+// // Button text styles.
 
 // $button-font-family: inherit;
 // $button-font-color: #fff;
@@ -343,11 +343,11 @@ $default-float: left;
 // $button-font-weight: bold;
 // $button-font-align: center;
 
-// Various hover effects.
+// // Various hover effects.
 
-// $button-function-factor: 10%;
+// // $button-function-factor: 10%;
 
-// Button border styles.
+// // Button border styles.
 
 // $button-border-width: 1px;
 // $button-border-style: solid;
