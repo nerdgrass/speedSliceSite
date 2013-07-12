@@ -1,19 +1,19 @@
 // Variables
-$white:#F9F5F2;
-$beige:#F7E6DA;
+$white:#f8f6f3;
+$beige:#ece3d6;
 $red:#A33F2D;
 $darkRed:#2B0905;
-$gold:#EA9C32;
+$gold:#efc657;
 .red {background:red;}
 .green {background:green;}
 .gray {background:gray;}
 .darkGray {background:darkgray;}
 .lightGray {background:lightgray;}
 .block {display:block;}
-.white {background:$white;}
+.white {background:$beige;}
 
 // Global
-body {background: #F7E6DA;}
+body {background: $white;}
 hr {
 	min-height:50px;
 	border:none;
@@ -50,12 +50,9 @@ img.logo {
 // font-family: 'Open Sans', sans-serif;
 h1 {
 	font-size:emCalc(72px);
-	font-family: 'Lobster Two', cursive;
 	font-weight: 700;
 }
-h1.logo {
-	font-family: 'Lobster Two', cursive;
-}
+h1.logo {}
 h1.subheader {
 	font-weight:300;
 	font-size:emCalc(32px);
@@ -63,7 +60,6 @@ h1.subheader {
 p {color:$darkRed;}
 
 //Buttons
-
 .redButton {
 	@include button-base;
 	@include button-size;
@@ -81,6 +77,13 @@ p {color:$darkRed;}
 	@include button-style($bg:$beige);
 	@include single-transition;
 	color:$darkRed;
+}
+.goldButton {
+	@include button-base;
+	@include button-size;
+	@include button-style($bg:$gold);
+	@include single-transition;
+	color:$red;
 }
 .beigeButton:active {
 	position: relative;
@@ -102,26 +105,26 @@ p {color:$darkRed;}
 }
 // Application Store Buttons
 .playStore {
-	background: $red
-		url(../img/playStoreButton.png)
+	background: $gold
+		url(../img/playStoreButtonLight.png)
 		no-repeat;
 	background-position: center center;
 	background-size:contain;
 	min-height:emCalc(45px);
 }
-.redButton.playStore {min-width:10em;}
+.goldButton.playStore {min-width:10em;}
 .appStore {
-	background: $red
-		url(../img/appStoreButton.png)
+	background: $gold
+		url(../img/appStoreButtonLight.png)
 		no-repeat;
 	background-position: center center;
 	background-size:contain;
 	min-height:emCalc(45px);
 }
-.redButton.appStore {min-width:10em;}
+.goldButton.appStore {min-width:10em;}
 .appStoreLight {
 	background: 
-		$beige
+		$white
 		url(../img/appStoreButtonLight.png)
 		no-repeat;
 	background-position: center center;
@@ -130,7 +133,7 @@ p {color:$darkRed;}
 }
 .playStoreLight {
 	background: 
-		$beige
+		$white
 		url(../img/playStoreButtonLight.png)
 		no-repeat;
 	background-position: center center;
@@ -194,7 +197,11 @@ a.disabled {color:$darkRed;}
     transition-delay: 0s;
 }
 .contain-to-grid.nav {
-	border-bottom:4px solid $beige;
+	border-bottom:4px solid $red;
+}
+[data-magellan-expedition] {
+	background:$white;
+	padding:emCalc(5px);
 }
 
 

@@ -1,7 +1,7 @@
 3.2.9 (Media Mark)
-58536dd1ccbc7cb3a160503dac60096a3734c03f
+3c3d4e3c787a479870321540f9bb6d3ede818db3
 o:Sass::Tree::RootNode
-:@template".}//
+:@template"}//
 // Foundation Variables
 //
 
@@ -32,9 +32,9 @@ $em-base: 16px !default;
 $default-float: left;
 
 // $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
+$body-font-color: #2B0905;
+ $body-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$body-font-weight: 300;
 // $body-font-style: normal;
 
 // Font-smoothing
@@ -140,8 +140,8 @@ $default-float: left;
 
 // Heading font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+ $header-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+ $header-font-weight: 600;
 // $header-font-style: normal;
 // $header-font-color: #222;
 // $header-line-height: 1.4;
@@ -174,8 +174,8 @@ $default-float: left;
 // Paragraphs
 
 // $paragraph-font-family: inherit;
-// $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
+$paragraph-font-weight: 300;
+$paragraph-font-size: 1.2em;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: emCalc(20px);
 // $paragraph-aside-font-size: emCalc(14px);
@@ -1272,7 +1272,7 @@ $default-float: left;
 // Sticky Class
 
 // $topbar-sticky-class: ".sticky";
-:@has_childrenT:@options{ :@children[uo:Sass::Tree::CommentNode
+:@has_childrenT:@options{ :@children[~o:Sass::Tree::CommentNode
 :
 @type:silent:@value["%/*
  * Foundation Variables
@@ -1305,11 +1305,14 @@ times;@;o;;[ ;["em;i;@;"1em;i;i;@;	[ ;i:@splat0;i:
 
 ;;;[" /* Various global styles */;@;	[ ;i o;;0;"default-float;o:Sass::Script::String	;:identifier;"	left;@;i";@;	[ ;i"o;
 
-;;;["æ/* $body-bg: #fff;
- * $body-font-color: #222;
- * $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
- * $body-font-weight: normal;
- * $body-font-style: normal; */;@;	[ ;i$o;
+;;;["/* $body-bg: #fff; */;@;	[ ;i$o;;0;"body-font-color;o:Sass::Script::Color	;0:@attrs{	:	bluei
+:redi0:
+alphai:
+greeni;@;i%;@;	[ ;i%o;;0;"body-font-family;o:Sass::Script::List	;[	o;#	;:string;"Source Sans Pro;@;i&o;#	;;$;"Helvetica;@;i&o;#	;;$;"
+Arial;@;i&o;#	;;$;"sans-serif;@;i&;@;i&:@separator:
+comma;@;	[ ;i&o;;0;"body-font-weight;o;;[ ;[ ;i,;@;"300;i';@;	[ ;i'o;
+
+;;;["$/* $body-font-style: normal; */;@;	[ ;i(o;
 
 ;;;["/* Font-smoothing */;@;	[ ;i*o;
 
@@ -1412,16 +1415,15 @@ times;@;o;;[ ;["em;i;@;"1em;i;i;@;	[ ;i:@splat0;i:
  * Typography Variables
  * */;@;	[ ;iÜo;
 
-;;;["/* Heading font styles */;@;	[ ;iäo;
+;;;["/* Heading font styles */;@;	[ ;iäo;;0;"header-font-family;o;+	;[	o;#	;;,;"Source Sans Pro;@;iåo;#	;;$;"Helvetica;@;iåo;#	;;$;"
+Arial;@;iåo;#	;;$;"sans-serif;@;iå;@;iå;-;.;@;	[ ;iåo;;0;"header-font-weight;o;;@p;[ ;iX;@;"600;iç;@;	[ ;iço;
 
-;;;[":/* $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
- * $header-font-weight: bold;
- * $header-font-style: normal;
+;;;["«/* $header-font-style: normal;
  * $header-font-color: #222;
  * $header-line-height: 1.4;
  * $header-top-margin: .2em;
  * $header-bottom-margin: .5em;
- * $header-text-rendering: optimizeLegibility; */;@;	[ ;iåo;
+ * $header-text-rendering: optimizeLegibility; */;@;	[ ;iéo;
 
 ;;;["/* Heading font sizes */;@;	[ ;iïo;
 
@@ -1447,14 +1449,14 @@ times;@;o;;[ ;["em;i;@;"1em;i;i;@;	[ ;i:@splat0;i:
 
 ;;;["/* Paragraphs */;@;	[ ;i´o;
 
-;;;["./* $paragraph-font-family: inherit;
- * $paragraph-font-weight: normal;
- * $paragraph-font-size: 1em;
- * $paragraph-line-height: 1.6;
+;;;["+/* $paragraph-font-family: inherit; */;@;	[ ;i≠o;;0;"paragraph-font-weight;o;;@p;[ ;i,;@;"300;iÆ;@;	[ ;iÆo;;0;"paragraph-font-size;o;;[ ;["em;f1.2 33;@;"
+1.2em;iØ;@;	[ ;iØo;
+
+;;;["…/* $paragraph-line-height: 1.6;
  * $paragraph-margin-bottom: emCalc(20px);
  * $paragraph-aside-font-size: emCalc(14px);
  * $paragraph-aside-line-height: 1.35;
- * $paragraph-aside-font-style: italic; */;@;	[ ;i≠o;
+ * $paragraph-aside-font-style: italic; */;@;	[ ;i∞o;
 
 ;;;["/* <code> tags */;@;	[ ;i∂o;
 
