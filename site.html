@@ -27,7 +27,7 @@
 
 </head>
 <body>
-	<div data-magellan-expedition class="contain-to-grid fixed nav">
+	<div data-magellan-expedition class="contain-to-grid fixed">
 		<nav class="top-bar">
 		  <ul class="title-area">
 		    <!-- Title Area -->
@@ -35,7 +35,6 @@
 		      <h1 class="logo">
 		      	<a href="#home">
 		      		<img class="logo" src="img/speedSliceLogo.png">
-		      		SpeedSlice 
 		      	</a>
 		      </h1>
 		    </li>
@@ -95,7 +94,7 @@
 			          <input type="text" placeholder="Phone Number, IE: (617) 867-5309">
 			        </div>
 			        <div class="small-12 large-2 columns">
-			        	<button class="redButton small">Send</button>
+			        	<button class="redButton">Send</button>
 			        </div>
 			      </div>
 				</form>
@@ -297,6 +296,7 @@
 				<h1 data-magellan-destination="contact">Contact Us</h1>
 				<div class="row">
 					<div class="large-6 columns">
+						<h3>We want to hear from you!</h3>
 						<p>
 							vehicle dead media papier-mache film sub-orbital neon tank-traps tank-traps ablative boat. j-pop cardboard bomb bomb nano- engine claymore mine bicycle vinyl military-grade range-rover. 
 						</p>
@@ -308,6 +308,7 @@
 						<button class="redButton twitterBtn"></button>
 					</div>
 					<div class="small-12 large-6 columns">
+						<h3>Send Us a message!</h3>
 						<form>
 							<div class="row">
 							    <div class="large-10 columns">
@@ -444,10 +445,12 @@
 	  	document.getElementById(navButton).className += " appStoreLight";
 	  	document.getElementById(mHeroButton).className += " appStore";
 	  	document.getElementById(mSubHeroButton).className += " playStore";
-	  } else {
+	  } else if (getBrowser()[0] == "Chrome") {
 	  	document.getElementById(navButton).className += " playStoreLight";
 	  	document.getElementById(mHeroButton).className += " playStore";
 	  	document.getElementById(mSubHeroButton).className += " appStore";
+	  } else {
+
 	  }
   </script>
 </body>

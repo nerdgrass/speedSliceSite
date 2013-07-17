@@ -86,8 +86,8 @@ div.heroText {margin-top:1em;}
 .homeCard {
 	min-height:70vh
 }
-.heroText button {
-	margin-top:1em;
+.heroText input {
+	min-height:emCalc(47px);
 }
 // Mobile Home Card
 .step1>div, .step2>div, .step3>div, .getSpeedSlice>div {
