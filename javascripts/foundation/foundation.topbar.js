@@ -287,7 +287,7 @@
 
             else if ($window.scrollTop() <= distance) {
               $(klass).removeClass("fixed");
-              $('body').css('padding-top','0');
+              // $('body').css('padding-top','0');
             }
         });
       }

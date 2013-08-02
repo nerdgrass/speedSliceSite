@@ -59,10 +59,7 @@ p {color:$darkRed;}
 
 //Buttons
 .redButton {
-	@include button-base;
-	@include button-size;
 	@include button-style($bg:$red);
-	@include single-transition;
 }
 .redButton:active {
 	position: relative;
@@ -196,6 +193,9 @@ a.disabled {color:$darkRed;}
 }
 div.contain-to-grid {
 	border-bottom:4px solid $red;
+}
+.contain-to-grid .top-bar {
+  margin-bottom:0;
 }
 [data-magellan-expedition] {
 	background:$white;
