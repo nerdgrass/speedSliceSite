@@ -29,8 +29,6 @@
 			$phoneNumber,
 
 			// the sms body
-			"Hi there! Try SpeedSlice, the fastest way to order pizza!
-
-			http://www.speedslice.com/getspeedslice"
+			"Hi there! Try SpeedSlice, the fastest way to order pizza! http://www.speedslice.com/getspeedslice"
 		);
 	}
