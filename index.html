@@ -2,23 +2,16 @@
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
 <head>
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, height=device-height" />
-  <title>SpeedSlice | The fastest way to order local Pizza! </title>
-
-  
+  <title>SpeedSlice | The fastest way to order local Pizza!</title>
+  <!-- Compiled CSS -->
   <link rel="stylesheet" href="stylesheets/app.css" />
-
-  <script type="text/javascript" src="//static.twilio.com/libs/twiliojs/1.1/twilio.min.js"></script>
-
-
-  <!-- Super Slow Webfonts Crap -->
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-
+  <!-- Source Sans Pro -->
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <!-- Modernizr! -->
   <script src="javascripts/vendor/custom.modernizr.js"></script>
-
 </head>
 <body>
 	<div data-magellan-expedition class="contain-to-grid sticky">
@@ -32,7 +25,6 @@
 		      	</a>
 		      </h1>
 		    </li>
-		    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 		  </ul>
 		  <section class="top-bar-section">
@@ -47,7 +39,7 @@
 		    <ul class="right">
 		      <li class="divider show-for-small"></li>
 		      <li class="has-form">
-		        <button id="navButton" class="beigeButton" href="#"></button>
+		        <button id="navButton" class="beigeButton expand" href="#"></button>
 		      </li>
 		    </ul>
 		  </section>
@@ -76,7 +68,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="row hide-for-small">
 		<div class="row homeCard">
 			<div class="large-6 columns heroText">
@@ -88,7 +79,7 @@
 			          <input name="phoneNumber" id="phoneNumber" type="tel" placeholder="Phone Number, IE: (617) 867-5309" required>
 			        </div>
 			        <div class="small-12 large-2 columns">
-			        	<input id="smsSubmit" type="submit" class="button prefix redButton"></input>
+			        	<input id="smsSubmit" type="submit" class="button prefix redButton" value="Send"></input>
 			        </div>
 			        <div data-alert id="smsSuccess" class="small-12 columns alert-box secondary" style="display:none;">
 			        	<p>SMS Sent!</p>
@@ -100,7 +91,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Mobile Home Card (WARNING: Intended usage not in a trailer park) -->
 	<div class="row card hide-for-medium-up">
 		<div class="small-12">
@@ -118,7 +108,7 @@
 			</div>
 			<div class="row step2">
 				<div class="small-8 columns">
-					<h2 class="mHome">Pick Your Restaurant</h2>
+					<h2 class="mHome">Pick Your Spot</h2>
 					<p class="mHome">
 						Order from your favorite local pizza joint instead of chain restaurants!
 					</p>
@@ -140,11 +130,11 @@
 					</p>
 				</div>
 			</div>
-			<div class="row getSpeedSlice">
+			<div class="getSpeedSlice">
 				<div class="small-10 small-centered columns">
 					<button id="mHeroButton" class="large button expand"></button>
 					<div class="row">
-						<div id class="small-6 small-centered columns">
+						<div id class="small-8 small-centered columns">
 							<p class="mHeroButton">Also available on</p>
 							<button id="mSubHeroButton" class="medium button expand"></button>
 						</div>
@@ -153,9 +143,7 @@
 			</div>
 		</div>
 	</div>
-
 	<a name="about"></a> 
-	
 	<div class="white">
 		<hr>
 		<div class="row"><!-- About Card -->
@@ -192,9 +180,9 @@
 								<h3 class="subheader aboutPortraitText">CEO &amp; Co-founder</h3>
 							</div>
 							<div class="small-6 columns">
-								<img class="aboutPortrait" src="img/greg.jpg" alt="Greg Santos, CEO of SpeedSlice">
-								<h3 class="aboutPortraitText">Greg Santos</h3>
-								<h3 class="subheader aboutPortraitText">CEO &amp; Co-founder</h3>
+								<img class="aboutPortrait" src="img/carlo.jpg" alt="Greg Santos, CEO of SpeedSlice">
+								<h3 class="aboutPortraitText">Carlo Espinoza</h3>
+								<h3 class="subheader aboutPortraitText">COO &amp; Co-founder</h3>
 							</div>
 
 							<p>
@@ -210,7 +198,6 @@
 		</div>
 	</div>
 	<a name="restaurants"></a>
-
 	<hr>
 		<div class="row"><!-- Restaurants Card -->
 		<div class="large-12 columns card">
@@ -218,10 +205,7 @@
 			<div class="row">
 				<div class="large-6 columns">
 					<p>
-						As a local business ourselves, we understand that sometimes larger companies can simply outmanuever you, even if you have a better product. MOAR CONTENT HERE?
-					</p>
-					<p>
-						We at SpeedSlice thought there was a better way: Let us build the mobile delivery experience, and let the people who make the best local pizzas do just that.  
+						As a local business ourselves, we understand that sometimes larger companies can simply outmanuever you, even if you have a better product. We at SpeedSlice thought there was a better way: Let us build the mobile delivery experience, and let the people who make the best local pizzas do just that.  
 					</p>
 					<h2>Get Listed</h2>
 					<p>
@@ -267,22 +251,6 @@
 							<p>
 								We cover 90% of Boston, Cambridge, &amp; Somerville. Want to know if you can order from your favorite restaurant? Check to see if we work with them!
 							</p>
-						</div>
-						<div class="small-6 columns">
-							<ul>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-							</ul>
-						</div>
-						<div class="small-6 columns">
-							<ul>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-								<li>Restaurant</li>
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -341,7 +309,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="footer">
 		<div class="row">
 			<div class="small-6 large-3 columns">
@@ -379,141 +346,31 @@
 			</div>
 		</div>
 	</div>
-
-
+  <!-- Check for Zepto support, load jQuery if necessary -->
   <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  
-  <script src="javascripts/foundation/foundation.js"></script>
-	
-	<script src="javascripts/foundation/foundation.alerts.js"></script>
-	
-	<script src="javascripts/foundation/foundation.clearing.js"></script>
-	
-	<script src="javascripts/foundation/foundation.cookie.js"></script>
-	
-	<script src="javascripts/foundation/foundation.dropdown.js"></script>
-	
-	<script src="javascripts/foundation/foundation.forms.js"></script>
-	
-	<script src="javascripts/foundation/foundation.interchange.js"></script>
-	
-	<script src="javascripts/foundation/foundation.joyride.js"></script>
-	
-	<script src="javascripts/foundation/foundation.magellan.js"></script>
-	
-	<script src="javascripts/foundation/foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/foundation.placeholder.js"></script>
-	
-	<script src="javascripts/foundation/foundation.reveal.js"></script>
-	
-	<script src="javascripts/foundation/foundation.section.js"></script>
-	
-	<script src="javascripts/foundation/foundation.tooltips.js"></script>
-	
-	<script src="javascripts/foundation/foundation.topbar.js"></script>
-	
-  
-  <script>
-    $(document).foundation();
-  </script>
-
-  <script type="text/javascript">
-  	//SMS Text widget
-  	$("#smsSubmit").click(function() {
-  		//On submit, werk dat AJAX magic
-  	    $.ajax({
-  	         url: "sms-rest.php",
-  	         data: {
-  	            phoneNumber: $('#phoneNumber').val() 
-  	         },
-  	         type: "POST",
-  	         success: function() {
-  	         	// Fade in the success message
-  	            $("#smsSuccess").fadeIn(400);              
-  	         }
-  	    })
-  	    //Make sure we stay on page
-  		return false;
-  	});
-  	//Restaurant Listing Form
-  	$("#rfSubmit").click(function() {
-  		//On submit, werk dat AJAX magic
-  	    $.ajax({
-  	         url: "rfMailer.php",
-  	         data: {
-  	             rfName: $('#rfName').val(),
-  	             rfRestaurantName: $('#rfRestaurantName').val(),
-                 rfEmail: $('#rfEmail').val(), 
-                 rfPhone: $('#rfPhone').val()
-  	         },
-  	         type: "POST",
-  	         success: function() {
-  	         	  // Fade in the success message
-  	              $("#rfSuccess").fadeIn(400);              
-  	         }
-  	    })
-  	    //Make sure we stay on page
-  		return false;
-  	});
-  	//Contact Form
-  	$("#cfSubmit").click(function() {
-  		//On submit, werk dat AJAX magic
-  	    $.ajax({
-  	         url: "cfMailer.php",
-  	         data: {
-  	             cfName: $('#cfName').val(),
-  	             cfEmail: $('#cfEmail').val(),
-  	             cfMessage: $('#cfMessage').val()
-  	         },
-  	         type: "POST",
-  	         success: function() {
-  	         	  // Fade in the success message
-  	              $("#cfSuccess").fadeIn(400);              
-  	         }
-  	    })
-  	    //Make sure we stay on page
-  		return false;
-  	});
-  </script>
-
-  <script type="text/javascript">
-	  function getBrowser() {
-  	      var simpleUserAgent = 
-  	      	navigator
-  	      	.userAgent
-  	      	// capture browser name and version using REGEX POWER
-  	      	.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
-  	      if(simpleUserAgent){
-  	      	// ignore concat'd useragent+version, and minor version number
-  	      	return simpleUserAgent.slice(1,3);
-  	      } else {
-  	      	// if not found, just ask the browser
-  	      	return [navigator.appName, navigator.appVersion]
-  	      }
-  	  }
-
-	  // button IDs
-  	  var mHeroButton = 'mHeroButton'
-  	  	, mSubHeroButton = 'mSubHeroButton'
-  	  	, navButton = 'navButton'
-  	  	;
-  	  // add modifier classes to buttons by id
-	  if (getBrowser()[0] == "Safari") {
-	  	document.getElementById(navButton).className += " appStoreLight";
-	  	document.getElementById(mHeroButton).className += " appStore";
-	  	document.getElementById(mSubHeroButton).className += " playStore";
-	  } else if (getBrowser()[0] == "Chrome") {
-	  	document.getElementById(navButton).className += " playStoreLight";
-	  	document.getElementById(mHeroButton).className += " playStore";
-	  	document.getElementById(mSubHeroButton).className += " appStore";
-	  } else {
-
-	  }
-  </script>
+    document.write('<script src=' +
+    ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+    '.js><\/script>')
+    </script>
+    <script src="javascripts/foundation/foundation.js"></script>
+    <script src="javascripts/foundation/foundation.alerts.js"></script>
+    <script src="javascripts/foundation/foundation.clearing.js"></script>
+    <script src="javascripts/foundation/foundation.cookie.js"></script>
+    <script src="javascripts/foundation/foundation.dropdown.js"></script>
+    <script src="javascripts/foundation/foundation.forms.js"></script>
+    <script src="javascripts/foundation/foundation.joyride.js"></script>
+    <script src="javascripts/foundation/foundation.magellan.js"></script>
+    <script src="javascripts/foundation/foundation.orbit.js"></script>
+    <script src="javascripts/foundation/foundation.placeholder.js"></script>
+    <script src="javascripts/foundation/foundation.reveal.js"></script>
+    <script src="javascripts/foundation/foundation.section.js"></script>
+    <script src="javascripts/foundation/foundation.tooltips.js"></script>
+    <script src="javascripts/foundation/foundation.topbar.js"></script>
+    <script src="javascripts/foundation/foundation.interchange.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  <script src="javascripts/speedslicesite.js"></script>
+  <script type="text/javascript" src="//static.twilio.com/libs/twiliojs/1.1/twilio.min.js"></script>
 </body>
 </html>

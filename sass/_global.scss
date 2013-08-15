@@ -106,6 +106,12 @@ p {color:$darkRed;}
 	background-position: center center;
 	background-size:contain;
 	min-height:emCalc(45px);
+}.playStore:hover {
+	background: darken($gold, 10%)
+		url(../img/playStoreButtonLight.png)
+		no-repeat;
+	background-position: center center;
+	background-size:contain;
 }
 .goldButton.playStore {min-width:10em;}
 .appStore {
@@ -115,6 +121,12 @@ p {color:$darkRed;}
 	background-position: center center;
 	background-size:contain;
 	min-height:emCalc(45px);
+} .appStore:hover {
+	background: darken($gold, 10%)
+		url(../img/appStoreButtonLight.png)
+		no-repeat;
+	background-position: center center;
+	background-size:contain;
 }
 .goldButton.appStore {min-width:10em;}
 .appStoreLight {
@@ -191,6 +203,14 @@ a.disabled {color:$darkRed;}
     transition-timing-function: ease-out;
     transition-delay: 0s;
 }
+.top-bar-section ul, .top-bar-section ul li > a {
+	background:$beige;
+}
+.top-bar-section ul li.hover > a {
+	color:darken($red, 10%);
+}
+.top-bar.expanded {
+}
 div.contain-to-grid {
 	border-bottom:4px solid $red;
 }
@@ -201,6 +221,12 @@ div.contain-to-grid {
 	background:$white;
 	padding:emCalc(5px);
 }
-
+.top-bar .toggle-topbar.menu-icon a {
+	color:$red;
+}
+.top-bar .toggle-topbar.menu-icon a span {
+  -webkit-box-shadow: 0 10px 0 1px $red, 0 16px 0 1px $red, 0 22px 0 1px $red;
+  box-shadow: 0 10px 0 1px $red, 0 16px 0 1px $red, 0 22px 0 1px $red
+}
 
 

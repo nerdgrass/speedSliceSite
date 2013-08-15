@@ -6,15 +6,15 @@
 	require "twilio-php/Services/Twilio.php";
 
 	// API Info
-	$AccountSid = "AC968a64c5fd4872399adf4451258e67e1";
-	$AuthToken = "6b9b9522b8cd8a6221e3d36448d87df6";
+	$AccountSid = "AC00bcdfc647ae0893d56a85384fc5c3c5";
+	$AuthToken = "70c36964b3e6e857bf8524abd43484ea";
 
 	// Instantiate a new Twilio Rest Client
 	$client = new Services_Twilio($AccountSid, $AuthToken);
 
 	// Create an array of one person, because this is how the tutorial did it, and damnit Jim, I'm a designer not a developer.
 	$people = array(
-		"+14158675309" => "Curious Greg",
+		"+14158675309" => "Curious George",
 	);
 
 	// Loop over the amount of people in the array above (one), then send them an SMS message!
@@ -23,14 +23,12 @@
 		$sms = $client->account->sms_messages->create(
 
 		// Insert valid Twilio phone number here, IE, where the SMS is coming from.
-			"617-553-1071", 
+			"203-819-7807", 
 
 			// the number we are sending to - Any phone number
 			$phoneNumber,
 
 			// the sms body
-			"Hi there! Try SpeedSlice, the fastest way to order pizza!
-
-			http://www.speedslice.com/getspeedslice"
+			"Try SpeedSlice, the fastest way to order pizza!"
 		);
 	}

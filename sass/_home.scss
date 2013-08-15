@@ -88,17 +88,29 @@ div.heroText {margin-top:1em;}
 
 //Desktop Home Card
 .homeCard {
-	min-height:70vh
+	min-height:70%;
 }
 .heroText input {
 	min-height:emCalc(47px);
 }
 // Mobile Home Card
 .step1>div, .step2>div, .step3>div, .getSpeedSlice>div {
-	min-height:15vh;
+	min-height:20%;
 }
 .step1>div{
 	margin-top:15px;
+}
+.step1 > div > h1.mHome {
+	background: url('../img/sausage.png') no-repeat center center;
+	background-size: emCalc(18px) emCalc(18px);
+}
+.step2 > div > h1.mHome {
+	background: url('../img/pepperoni.png') no-repeat center center;
+	background-size: emCalc(18px) emCalc(18px);
+}
+.step3 > div > h1.mHome {
+	background: url('../img/peppers.png') no-repeat center center;
+	background-size: emCalc(18px) emCalc(18px);
 }
 h1.mHome {
 	text-align:center;
@@ -110,6 +122,13 @@ h1.mHome {
 	width:emCalc(30px);
 	height:emCalc(30px);
 	padding:emCalc(4px);
+}
+@media only screen and (max-width: 768px) {
+	h1.mHome {
+		width:emCalc(20px);
+		height:emCalc(20px);
+		line-height:.6;
+	}
 }
 label.mHome {
 	text-align:center;
