@@ -2,7 +2,7 @@
 $("#smsSubmit").click(function() {
   //On submit, werk dat AJAX magic
     $.ajax({
-         url: "php/sms-rest.php",
+         url: "sms-rest.php",
          data: {
             phoneNumber: $('#phoneNumber').val() 
          },
@@ -19,7 +19,7 @@ $("#smsSubmit").click(function() {
 $("#rfSubmit").click(function() {
   //On submit, werk dat AJAX magic
     $.ajax({
-         url: "php/rfMailer.php",
+         url: "rfMailer.php",
          data: {
              rfName: $('#rfName').val(),
              rfRestaurantName: $('#rfRestaurantName').val(),
@@ -39,7 +39,7 @@ $("#rfSubmit").click(function() {
 $("#cfSubmit").click(function() {
   //On submit, werk dat AJAX magic
     $.ajax({
-         url: "php/cfMailer.php",
+         url: "cfMailer.php",
          data: {
              cfName: $('#cfName').val(),
              cfEmail: $('#cfEmail').val(),

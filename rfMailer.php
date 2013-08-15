@@ -4,7 +4,7 @@
     $rfEmail = $_POST['rfEmail'];
     $rfPhone = $_POST['rfPhone'];
     $from = 'From: $rfName'; 
-    $to = 'arboerstler@gmail.com'; 
+    $to = 'contact@speedslice.com'; 
 
     $body = "From: $rfName\n E-Mail: $rfEmail\n Phone Number: $rfPhone \n Restaurant Name: $rfRestaurantName";
 
