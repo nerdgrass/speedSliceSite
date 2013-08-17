@@ -8,9 +8,9 @@
   <title>SpeedSlice | The fastest way to order local Pizza!</title>
   <script type="text/javascript" src="//static.twilio.com/libs/twiliojs/1.1/twilio.min.js"></script>
   <!-- Compiled CSS -->
-  <link rel="stylesheet" href="stylesheets/app.css" />
+  <link rel="stylesheet" href="stylesheets/app.min.css" />
   <!-- Source Sans Pro -->
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <!-- Modernizr! -->
   <script src="javascripts/vendor/custom.modernizr.js"></script>
 </head>
@@ -40,7 +40,7 @@
 		    <ul class="right">
 		      <li class="divider show-for-small"></li>
 		      <li class="has-form">
-		        <button id="navButton" class="beigeButton expand" href="#"></button>
+		        <a id="navButton" class="beigeButton expand" target="_blank"></a>
 		      </li>
 		    </ul>
 		  </section>
@@ -56,10 +56,10 @@
 				<h1>The fastest way to order pizza!</h1>
 				<div class="row">
 					<div class="large-6 columns">
-						<button class="goldButton large appStore"></button>
+						<a class="goldButton large appStore" target="_blank" href="https://itunes.apple.com/us/app/speedslice/id636969512?mt=8"></a>
 					</div>
 					<div class="large-6 columns">
-						<button class="goldButton large playStore"></button>
+						<a class="goldButton large playStore" target="_blank" href="https://play.google.com/store/apps/details?id=com.speedslice.speedsliceapp&hl=en"></a>
 					</div>
 				</div>
 				
@@ -94,7 +94,7 @@
 	</div>
 	<!-- Mobile Home Card (WARNING: Intended usage not in a trailer park) -->
 	<div class="row card hide-for-medium-up">
-		<div class="small-12">
+		<div class="small-12 columns">
 			<div class="row step1">
 				<div class="small-4 columns">
 					<label class="mHome">Step</label>
@@ -133,11 +133,11 @@
 			</div>
 			<div class="getSpeedSlice">
 				<div class="small-10 small-centered columns">
-					<button id="mHeroButton" class="large button expand"></button>
+					<a id="mHeroButton" class="large button expand" target="_blank"></a>
 					<div class="row">
 						<div id class="small-8 small-centered columns">
 							<p class="mHeroButton">Also available on</p>
-							<button id="mSubHeroButton" class="medium button expand"></button>
+							<a id="mSubHeroButton" class="medium button expand" target="_blank"></a>
 						</div>
 					</div>
 				</div>
@@ -167,9 +167,9 @@
 					        cash!</li>
 					    </ul>
 					    <h3>Find us on your favorite social media platform!</h3>
-					    <button class="redButton fbBtn"></button>
-						<button class="redButton tumblrBtn"></button>
-						<button class="redButton twitterBtn"></button>
+					    <a class="redButton fbBtn" title="Speedslice's facebook page!" target="_blank" href="https://www.facebook.com/SpeedSlice"></a>
+						<!-- <a class="redButton tumblrBtn" target="_blank" href=""></a> -->
+						<a class="redButton twitterBtn" target="_blank" title="SpeedSlice's twitter page" href="https://twitter.com/speedsliceapp"></a>
 					</div>
 					<div class="large-6 columns">
 						<div class="row">
@@ -269,15 +269,11 @@
 				<div class="row">
 					<div class="large-6 columns">
 						<h3>We want to hear from you!</h3>
-						<p>
-							Got something to say? We'd like to hear it!
-						</p>
-						<p>
-							Come visit us on your favorite social media platform!
-						</p>
-						<button class="redButton fbBtn"></button>
-						<button class="redButton tumblrBtn"></button>
-						<button class="redButton twitterBtn"></button>
+						<p>Got something to say? We'd like to hear it!</p>
+						<p>Come visit us on your favorite social media platform!</p>
+						<a class="redButton fbBtn" title="Speedslice's facebook page!" target="_blank" href="https://www.facebook.com/SpeedSlice"></a>
+						<!-- <a class="redButton tumblrBtn" target="_blank" href=""></a> -->
+						<a class="redButton twitterBtn" target="_blank" title="SpeedSlice's twitter page" href="https://twitter.com/speedsliceapp"></a>
 					</div>
 					<div class="small-12 large-6 columns">
 						<h3>Send Us a message!</h3>
@@ -328,16 +324,15 @@
 			</div>
 			<div class="small-6 large-3 columns">
 				<ul>
-					<li><a href="" target="_blank">Blog</a></li>
-					<li><a href="" target="_blank">Twitter</a></li>
-					<li><a href="" target="_blank">Facebook</a></li>
+					<li><a class="disabled">Blog (Coming Soon!)</a></li>
+					<li><a href="https://twitter.com/speedsliceapp" target="_blank">Twitter</a></li>
+					<li><a href="https://www.facebook.com/SpeedSlice" target="_blank">Facebook</a></li>
 				</ul>
 			</div>
 			<div class="small-6 large-3 columns">
 				<ul>
-					<li><a href="" target="_blank">App Store Download</a></li>
-					<li><a href="" target="_blank">Play Store Download</a></li>
-					<li><a href="" target="_blank">Web Application</a></li>
+					<li><a href="https://itunes.apple.com/us/app/speedslice/id636969512?mt=8" target="_blank">App Store</a></li>
+					<li><a href="https://play.google.com/store/apps/details?id=com.speedslice.speedsliceapp&hl=en" target="_blank">Play Store</a></li>
 				</ul>
 			</div>
 		</div>
@@ -353,24 +348,10 @@
     ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
     '.js><\/script>')
     </script>
-    <script src="javascripts/foundation/foundation.js"></script>
-    <script src="javascripts/foundation/foundation.alerts.js"></script>
-    <script src="javascripts/foundation/foundation.clearing.js"></script>
-    <script src="javascripts/foundation/foundation.cookie.js"></script>
-    <script src="javascripts/foundation/foundation.dropdown.js"></script>
-    <script src="javascripts/foundation/foundation.forms.js"></script>
-    <script src="javascripts/foundation/foundation.joyride.js"></script>
-    <script src="javascripts/foundation/foundation.magellan.js"></script>
-    <script src="javascripts/foundation/foundation.orbit.js"></script>
-    <script src="javascripts/foundation/foundation.placeholder.js"></script>
-    <script src="javascripts/foundation/foundation.reveal.js"></script>
-    <script src="javascripts/foundation/foundation.section.js"></script>
-    <script src="javascripts/foundation/foundation.tooltips.js"></script>
-    <script src="javascripts/foundation/foundation.topbar.js"></script>
-    <script src="javascripts/foundation/foundation.interchange.js"></script>
+    <script src="javascripts/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
-  <script src="javascripts/speedslicesite.js"></script>
+  <script src="javascripts/speedslicesite.min.js"></script>
 </body>
 </html>

@@ -75,15 +75,21 @@ var mHeroButton = 'mHeroButton'
   , mSubHeroButton = 'mSubHeroButton'
   , navButton = 'navButton'
   ;
-  // add modifier classes to buttons by id
+  // add modifier classes to buttons by id & link to appropriate store
 if (getBrowser()[0] == "Safari") {
-  document.getElementById(navButton).className += " appStoreLight";
+  document.getElementById(navButton).className += " appStoreLight"; //App Store Graphics
+  document.getElementById(navButton).href="https://itunes.apple.com/us/app/speedslice/id636969512?mt=8";
   document.getElementById(mHeroButton).className += " appStore";
+  document.getElementById(mHeroButton).href="https://itunes.apple.com/us/app/speedslice/id636969512?mt=8";
   document.getElementById(mSubHeroButton).className += " playStore";
+  document.getElementById(mSubHeroButton).href="https://play.google.com/store/apps/details?id=com.speedslice.speedsliceapp&hl=en"; 
 } else if (getBrowser()[0] == "Chrome") {
   document.getElementById(navButton).className += " playStoreLight";
+  document.getElementById(navButton).href="https://play.google.com/store/apps/details?id=com.speedslice.speedsliceapp&hl=en"; 
   document.getElementById(mHeroButton).className += " playStore";
+  document.getElementById(mHeroButton).href="https://play.google.com/store/apps/details?id=com.speedslice.speedsliceapp&hl=en"; 
   document.getElementById(mSubHeroButton).className += " appStore";
+  document.getElementById(mSubHeroButton).href="https://itunes.apple.com/us/app/speedslice/id636969512?mt=8"; 
 } else {
 
 }

@@ -1,8 +1,13 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
 /* humanstxt.org */
+                            
+/* SITE */                        
+Last update: 2013/08/17 
+Standards: HTML5, CSS3, PHP5
+Components: Modernizr, jQuery, Zepto.js, ZURB Foundation, SASS, Compass, Twilio
+Software: Git, GitHub, Sublime Text 2, CS6
 
-/* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Coda, Textmate, Git
+/* TEAM */
+Your title: Alex Boerstler
+Site: arboerstler@gmail.com
+Twitter: nerdgrass
+Location: Cambridge, USA.
